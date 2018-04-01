@@ -183,9 +183,9 @@ void vendor_load_properties()
     sprintf(description, "osprey_%s%s%s%s-user 6.0.1 MPI24.107-55 33 release-keys", customerid, ds, tv, gb);
     sprintf(fingerprint, "motorola/osprey_%s%s%s%s/%s:6.0.1/MPI24.107-55/33:user/release-keys", customerid, ds, tv, gb, device);
 
-    property_override("ro.product.device", device);
+    property_override_dual("ro.product.device", "ro.vendor.product.device", device);
     property_override("ro.build.product", device);
     property_override("ro.build.description", description);
-    property_override("ro.build.fingerprint", fingerprint);
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", fingerprint);
     property_set("ro.mot.build.customerid", customerid);
 }
