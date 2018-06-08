@@ -93,8 +93,7 @@ void vendor_load_properties()
 
     property_set("ro.gsm.data_retry_config", "default_randomization=2000,max_retries=infinite,1000,1000,80000,125000,485000,905000");
 
-    if (sku == "XT1540"){
-		property_override_dual("ro.product.model","ro.vendor.product.model", "XT1540");
+    if (sku == "XT1540") {
     if(is2GB()) {
 	property_override_dual("ro.product.device","ro.vendor.product.device", "osprey_u2");
         property_override_dual("ro.build.description","ro.vendor.build.description", "osprey_retus_2gb-user 6.0.1 MPIS24.107-55-2-5 5 release-keys");
@@ -109,8 +108,7 @@ void vendor_load_properties()
         property_set("ro.mot.build.customerid", "retus");
         property_set("ro.gsm.data_retry_config", "");
     } else if (sku == "XT1541") {
-		property_override_dual("ro.product.model","ro.vendor.product.model", "XT1541");
-		if(is2GB()) {
+    if(is2GB()) {
 	property_override_dual("ro.product.device","ro.vendor.product.device", "osprey_u2");
         property_override_dual("ro.build.description","ro.vendor.build.description", "osprey_reteu_2gb-user 6.0.1 MPIS24.107-55-2-5 5 release-keys");
         property_override_dual("ro.build.fingerprint","ro.vendor.build.fingerprint", "motorola/osprey_reteu_2gb/osprey_u2:6.0.1/MPIS24.107-55-2-5/5:user/release-keys");
@@ -125,7 +123,6 @@ void vendor_load_properties()
         property_set("ro.fsg-id", "emea");
         property_set("persist.radio.process_sups_ind", "0");
     } else if (sku == "XT1542") {
-		property_override_dual("ro.product.model","ro.vendor.product.model", "XT1542");
 	if(is2GB()) {
 	property_override_dual("ro.product.device","ro.vendor.product.device", "osprey_u2");
         property_override_dual("ro.build.description","ro.vendor.build.description", "osprey_retla_2gb-user 6.0.1 MPIS24.107-55-2-5 5 release-keys");
@@ -141,7 +138,6 @@ void vendor_load_properties()
         property_set("persist.radio.all_bc_msg", "all");
         property_set("persist.radio.process_sups_ind", "1");
     } else if (sku == "XT1543" || radio == "0x6") {
-		property_override_dual("ro.product.model","ro.vendor.product.model", "XT1543");
         MSIM = true;
     if(is2GB()) {
 	property_override_dual("ro.product.device","ro.vendor.product.device", "osprey_ud2");
@@ -158,7 +154,6 @@ void vendor_load_properties()
         property_set("persist.radio.all_bc_msg", "all");
         property_set("persist.radio.process_sups_ind", "1");
     } else if (sku == "XT1544") {
-		property_override_dual("ro.product.model","ro.vendor.product.model", "XT1544");
         MSIM = true;
 	property_override_dual("ro.product.device","ro.vendor.product.device", "osprey_udstv");
         property_override_dual("ro.build.description","ro.vendor.build.description", "osprey_retbr_dstv-user 6.0.1 MPIS24.107-55-2-5 5 release-keys");
@@ -168,7 +163,6 @@ void vendor_load_properties()
         property_set("persist.radio.all_bc_msg", "all");
         property_set("persist.radio.process_sups_ind", "1");
     } else if (sku == "XT1548") {
-		property_override_dual("ro.product.model","ro.vendor.product.model", "XT1548");
     if (carrier == "sprint") {
 	property_set("ro.mot.build.customerid", "sprint");
 	property_override_dual("ro.build.description","ro.vendor.build.description", "osprey_sprint-user 6.0.1 MPIS24.107-55-2-5 5 release-keys");
@@ -196,13 +190,12 @@ void vendor_load_properties()
         property_set("ro.telephony.get_imsi_from_sim", "true");
         property_set("telephony.lteOnCdmaDevice", "1");
     } else if (sku == "XT1550") {
-		property_override_dual("ro.product.model","ro.vendor.product.model", "XT1550");
         MSIM = true;
     if(is2GB()) {
 	property_override_dual("ro.build.product","ro.vendor.build.product", "osprey_ud2");
 	property_override_dual("ro.product.device","ro.vendor.product.device", "osprey_ud2");
 	property_override_dual("ro.build.description","ro.vendor.build.description", "osprey_retasia_ds_2gb-user 6.0.1 MPIS24.107-55-2-5 5 release-keys");
-    property_override_dual("ro.build.fingerprint","ro.vendor.build.fingerprint", "motorola/osprey_retasia_ds_2gb/osprey_ud2:6.0.1/MPIS24.107-55-2-5/5:user/release-keys");
+        property_override_dual("ro.build.fingerprint","ro.vendor.build.fingerprint", "motorola/osprey_retasia_ds_2gb/osprey_ud2:6.0.1/MPIS24.107-55-2-5/5:user/release-keys");
     } else {
 	property_override_dual("ro.build.product","ro.vendor.build.product", "osprey_uds");
 	property_override_dual("ro.product.device","ro.vendor.product.device", "osprey_uds");
