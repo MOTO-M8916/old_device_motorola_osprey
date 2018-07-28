@@ -33,6 +33,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := motorola/osprey_reteu/osprey_umts:6.0.1/MPIS24.107-55-2-12/9:user/release-keys
 
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
-    ro.build.product
-
