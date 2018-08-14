@@ -57,8 +57,5 @@ endif
 # Power
 TARGET_POWERHAL_HEADER_PATH := $(DEVICE_PATH)/power
 
-# Properties
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-
 # Sensors
 BOARD_USES_STML0XX_SENSOR_HUB := true
