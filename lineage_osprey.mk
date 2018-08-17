@@ -19,11 +19,10 @@ $(call inherit-product, device/motorola/osprey/full_osprey.mk)
 TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1280
-TARGET_BOOT_ANIMATION_RES := 720
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := osprey
-PRODUCT_NAME := aosp_osprey
+PRODUCT_NAME := lineage_osprey
 PRODUCT_MODEL := MotoG3
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
@@ -33,4 +32,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="osprey_reteu-user 6.0.1 MPIS24.107-55-2-12 9 release-keys"
 
 BUILD_FINGERPRINT := motorola/osprey_reteu/osprey_umts:6.0.1/MPIS24.107-55-2-12/9:user/release-keys
-
